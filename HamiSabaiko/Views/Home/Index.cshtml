@@ -1,0 +1,40 @@
+﻿@model  List<HamiSabaiko.Models.Customer> 
+@*@{
+    ViewBag.Title = "Index";
+}*@
+
+
+<h2>Home Page</h2>
+
+<div>
+    <div class="col-md-6">
+        <input type="text" placeholder="Customer ID"/>
+        <button>Search Customer</button>
+    </div>
+</div>
+<br />
+<div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>S.N</th>
+                <th>Name</th>
+                <th>Amount</th>
+                <th>Loan</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td scope="row">@item.SerialNumber</td>
+                    <td>@item.Name</td>
+                    <td>@item.Amount</td>
+                    <td>@item.LoanAmount</td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+</div>
+
