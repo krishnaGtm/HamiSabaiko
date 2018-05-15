@@ -4,7 +4,7 @@ using System.Data;
 using System.Data.Common;
 using System.Threading.Tasks;
 
-namespace HamiSabaiko.DAL.Interfaces.Base
+namespace HamiSabaiko.DAL.Interfaces
 {
     public interface IDatabase : IDisposable
     {
@@ -12,7 +12,7 @@ namespace HamiSabaiko.DAL.Interfaces.Base
 
         DbParameter CreateParameter(string name, object value);
         DbParameter CreateOutputParameter(string name, DbType dbType);
-        DbParameter CreateOutputParameter(string name, DbType dbType,int size);
+        DbParameter CreateOutputParameter(string name, DbType dbType, int size);
         DbParameter CreateTVPParameter(string name, DataTable value);
 
         Task BeginTransactionAsync();

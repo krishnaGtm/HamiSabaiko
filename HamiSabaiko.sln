@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HamiSabaiko.BAL", "HamiSaba
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HamiSabaiko.DAL", "HamiSabaiko.DAL\HamiSabaiko.DAL.csproj", "{8085C4B9-C890-45A6-A0C9-E9C6C0646664}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HamiSabaiko.Entities", "HamiSabaiko.Entities\HamiSabaiko.Entities.csproj", "{12573D40-9A6A-43CC-B7C5-2E8E47EF49C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{8085C4B9-C890-45A6-A0C9-E9C6C0646664}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8085C4B9-C890-45A6-A0C9-E9C6C0646664}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8085C4B9-C890-45A6-A0C9-E9C6C0646664}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12573D40-9A6A-43CC-B7C5-2E8E47EF49C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12573D40-9A6A-43CC-B7C5-2E8E47EF49C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12573D40-9A6A-43CC-B7C5-2E8E47EF49C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12573D40-9A6A-43CC-B7C5-2E8E47EF49C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

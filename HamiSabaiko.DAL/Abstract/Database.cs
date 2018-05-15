@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
 using System.Threading.Tasks;
-using HamiSabaiko.DAL.Interfaces.Base;
 using System.Configuration;
+using HamiSabaiko.DAL.Interfaces;
 
 namespace HamiSabaiko.DAL.Abstract
 {
