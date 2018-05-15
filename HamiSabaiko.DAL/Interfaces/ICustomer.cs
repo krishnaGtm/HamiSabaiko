@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HamiSabaiko.DAL
+namespace HamiSabaiko.DAL.Interfaces
 {
-    public class Class1
+    interface ICustomer
     {
     }
 }
