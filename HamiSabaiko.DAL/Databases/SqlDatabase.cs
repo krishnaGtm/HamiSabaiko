@@ -1,9 +1,9 @@
-﻿using HamiSabaiko.DAL.Abstract;
-using System.Data;
+﻿using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
+using HamiSabaiko.DAL.Abstract;
 
-namespace Enza.UTM.DataAccess.Databases
+namespace HamiSabaiko.DAL.Databases
 {
     /// <summary>
     /// Used to connect SQL Server Specific database connection and it's operations.

@@ -4,7 +4,7 @@ using System.Data;
 using System.Data.Common;
 using System.Threading.Tasks;
 
-namespace HamiSabaiko.DAL.Interfaces
+namespace HamiSabaiko.DAL.Interfaces.Base
 {
     public interface IDatabase : IDisposable
     {

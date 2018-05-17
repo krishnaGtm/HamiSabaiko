@@ -1,17 +1,12 @@
 ﻿using HamiSabaiko.BAL.Interfaces;
-using HamiSabaiko.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using System.Web;
 using System.Web.Mvc;
 
 namespace HamiSabaiko.Controllers
 {
     public class HomeController : Controller
     {
-        private ICustomerService _service;
+        private readonly ICustomerService _service;
         public HomeController(ICustomerService service)
         {
             _service = service;

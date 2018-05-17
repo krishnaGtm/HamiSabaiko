@@ -1,16 +1,11 @@
 ﻿using Autofac;
-using Enza.UTM.DataAccess.Databases;
 using HamiSabaiko.BAL.Interfaces;
 using HamiSabaiko.BAL.Services;
 using HamiSabaiko.DAL.Interfaces;
 using HamiSabaiko.DAL.Interfaces.Base;
-using HamiSabaiko.DAL.Repositories;
+using HamiSabaiko.DAL.Databases;
+using HamiSabaiko.DAL.Repositiories;
 using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HamiSabaiko.BAL
 {
@@ -20,13 +15,15 @@ namespace HamiSabaiko.BAL
         {
             //Database
             //builder.RegisterType<UserContext>().As<IUserContext>().InstancePerLifetimeScope();
-            builder.RegisterType<SqlDatabase>().As<IDatabase>().WithParameter("nameOrConnectionString", "ConnectionString").InstancePerLifetimeScope();
+           
+            builder.RegisterType<SqlDatabase>().As<IDatabase>().WithParameter("nameOrConnectionString", "ConnectionString").InstancePerRequest();
 
             //Repositories
-            builder.RegisterType<CustomerRepository>().As<ICustomerRepository>().InstancePerLifetimeScope();
+            builder.RegisterType<CustomerRepository>().As<ICustomerRepository>().InstancePerRequest();
 
             //Services
-            builder.RegisterType<CustomerService>().As<ICustomerService>().InstancePerLifetimeScope();
+            builder.RegisterType<CustomerService>().As<ICustomerService>().InstancePerRequest();
         }
+        
     }
 }

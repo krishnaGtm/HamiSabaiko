@@ -5,6 +5,7 @@ using System.Data.Common;
 using System.Threading.Tasks;
 using System.Configuration;
 using HamiSabaiko.DAL.Interfaces;
+using HamiSabaiko.DAL.Interfaces.Base;
 
 namespace HamiSabaiko.DAL.Abstract
 {
